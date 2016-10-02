@@ -6,9 +6,9 @@ Compute Cloud.
 
 ##Requirements
 ------------
-* Ruby 2.2.x for the main Ruby script
-* gems: rubygems, rest-client, json, uri, net/http, http-cookie
-* Tested on CentOS / RHEL / 6.7 or higher
+* Ruby 2.x for the main Ruby script
+* gems: rest-client (https://github.com/rest-client/rest-client)
+* Tested on CentOS / RHEL / 6.7 or higher, OS X 10.11.x
 
 ##Attributes
 ----------
@@ -16,7 +16,7 @@ The following environment variables need to be set:
 
 ``` ruby
 # environment variable
-opc-pass = (password for accessing the REST API)
+$export opc-pass=(password for user accessing the REST API)
 
 ```
 
