@@ -3,7 +3,7 @@ require 'rest-client'
 # Setup user and password for REST call to obtain cookie data
 user = '/Compute-name/name@domain.com'
 pass = ENV['opc_pass']
-# Create formated paylod / body
+# Create formatted paylod / body
 auth = "{\"user\":\"#{user}\",\"password\":\"#{pass}\"}"
 
 # Set header and url
@@ -20,7 +20,7 @@ resource = RestClient::Request.new(
 # Execute the rest-client
 response = resource.execute
 
-# Set the variable to so auth cookie is in the correct format
+# Set the variable so auth cookie is in the correct format
 rawcookie = response.cookies['nimbula']
 cookie = "nimbula=#{rawcookie}; Path=/; Max-Age=1800"
 
